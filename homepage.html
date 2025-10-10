@@ -1,12 +1,178 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>AutoHunt | Find Your Dream Car</title>
+    <link rel="stylesheet" href="homepage.css">
 </head>
+
 <body>
-    tao la thang tai cho dien
-    
+
+    <header class="navbar">
+        <div class="logo">AutoHunt</div>
+        <nav>
+            <ul>
+                <li><a href="#">New Cars</a></li>
+                <li><a href="#">Used Cars</a></li>
+                <li><a href="#">Compare</a></li>
+                <li><a href="#">Sell</a></li>
+            </ul>
+        </nav>
+        <div class="auth">
+            <a href="#">Sign In</a> | <a href="#">Sign Up</a>
+        </div>
+    </header>
+
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Find your dream car</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div class="search-box">
+            <input type="text" placeholder="Search">
+            <input type="text" placeholder="Location">
+            <select>
+                <option>Model</option>
+            </select>
+            <input type="range">
+            <button>Search</button>
+        </div>
+    </section>
+
+
+    <section class="recommended">
+        <h2>Recommended Cars</h2>
+        <div class="card-grid">
+            <div class="car-card">
+                <img src="Tesla.png" alt="Car">
+                <h3>Tesla Model 3</h3>
+                <p>$56,690</p>
+                <span>New</span>
+            </div>
+            <div class="car-card">
+                <img src="Ford.png" alt="Car">
+                <h3>Ford F-250</h3>
+                <p>$82,098</p>
+                <span>Used</span>
+            </div>
+            <div class="car-card">
+                <img src="Honda.png" alt="Car">
+                <h3>Honda Pilot Touring</h3>
+                <p>$43,735</p>
+                <span>Used</span>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="compare">
+        <h2>Compare Cars</h2>
+        <div class="compare-grid">
+            <div class="car-card">
+                <img src="Ford.png" alt="">
+                <h3>Ford F-250 Super Duty</h3>
+                <p>$82,098</p>
+            </div>
+            <div class="vs">VS</div>
+            <div class="car-card">
+                <img src="Honda.png" alt="">
+                <h3>Honda Pilot Touring</h3>
+                <p>$43,735</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="about">
+        <div class="about-text">
+            <h2>About Us</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in finibus erat.</p>
+            <div class="stats">
+                <div><strong>150</strong><span>Vehicles</span></div>
+                <div><strong>40</strong><span>Sold</span></div>
+                <div><strong>38</strong><span>Happy Clients</span></div>
+                <div><strong>5</strong><span>Awards</span></div>
+            </div>
+        </div>
+        <div class="about-img">
+            <img src="https://via.placeholder.com/500x300" alt="Car">
+        </div>
+    </section>
+
+    <section class="services">
+        <h2>Our Services</h2>
+        <div class="service-grid">
+            <div class="service-item">Buy a new car</div>
+            <div class="service-item">Buy a used car</div>
+            <div class="service-item">Sell my car</div>
+        </div>
+    </section>
+
+    <section class="contact">
+        <div class="map">
+            <img src="Frame 93.png" alt="Map">
+        </div>
+        <form class="contact-form">
+            <h2>Contact</h2>
+            <input type="text" placeholder="Full Name">
+            <input type="email" placeholder="Email">
+            <input type="text" placeholder="Phone">
+            <textarea placeholder="Comment"></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+
+    <!-- Brands row (centered logos) -->
+    <div class="brand-row">
+        <div class="container">
+            <ul class="brand-list">
+                <li><img src="Tesla.png" alt="Tesla" class="brand-logo"></li>
+                <li><img src="Audi.png" alt="Audi" class="brand-logo"></li>
+                <li><img src="Fiat.png" alt="Fiat" class="brand-logo"></li>
+                <li><img src="Honda.png" alt="Honda" class="brand-logo"></li>
+                <li><img src="Peugeot.png" alt="Peugeot" class="brand-logo"></li>
+                <li><img src="Volvo.png" alt="Volvo" class="brand-logo"></li>
+            </ul>
+        </div>
+    </div>
+
+    <footer class="site-footer">
+        <div class="container footer-main">
+            <div class="footer-column">
+                <h4>ABOUT US</h4>
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h4>CUSTOMER SERVICE</h4>
+                <p class="muted">info@car.com</p>
+                <p class="muted">240-865-3730</p>
+            </div>
+
+            <div class="footer-column footer-contact">
+                <h4>CONTACT</h4>
+                <address class="muted">3926 Cahn Street, Baltimore, Maryland, 21201, United States</address>
+                <div class="social">
+                    <a href="#"><img src="Frame 85.png" alt="facebook"></a>
+                    <a href="#"><img src="Frame 86.png" alt="instagram"></a>
+                    <a href="#"><img src="Frame 87.png" alt="youtube"></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+                <p>2021 AutoHunt. All Rights reserved</p>
+            </div>
+        </div>
+    </footer>
 </body>
+
 </html>

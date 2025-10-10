@@ -1,0 +1,249 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #0b1018;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+header.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 5%;
+  background: #101726;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #00aaff;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+
+nav a, .auth a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.hero {
+  background: url('Rectangle 78.png') center/cover no-repeat;
+  padding: 8rem 5%;
+  position: relative;
+}
+
+.hero-content {
+  max-width: 500px;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+}
+
+.search-box {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.search-box input,
+.search-box select,
+.search-box button {
+  padding: 0.8rem;
+  border: none;
+  border-radius: 4px;
+}
+
+.search-box button {
+  background: #0077cc;
+  color: white;
+  cursor: pointer;
+}
+
+.recommended, .compare, .about, .services, .contact {
+  padding: 4rem 5%;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.car-card {
+  background: #1a2235;
+  padding: 1rem;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.car-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.compare-grid {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.vs {
+  font-size: 2rem;
+  color: #00aaff;
+}
+
+.about {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2rem;
+}
+
+.about-text {
+  flex: 1;
+}
+
+.about-img img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 1.5rem;
+  gap: 1rem;
+}
+
+.stats div {
+  background: #162033;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.services .service-grid {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.service-item {
+  background: #162033;
+  padding: 1rem 2rem;
+  border: 1px solid #00aaff;
+  border-radius: 8px;
+}
+
+.contact {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+.contact-form {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contact-form input, .contact-form textarea, .contact-form button {
+  padding: 0.8rem;
+  border: none;
+  border-radius: 4px;
+}
+
+.contact-form button {
+  background: #0077cc;
+  color: white;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #101726;
+  margin-top: 3rem;
+}
+
+.brand-row {
+  background: #0f1720;
+  padding: 2.5rem 0;
+}
+.brand-row .container {
+  width: 90%;
+  margin: 0 auto;
+}
+.brand-list {
+  display: flex;
+  gap: 3rem;
+  list-style: none;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.brand-logo {
+  height: 36px;
+  opacity: 0.85;
+  filter: grayscale(40%);
+}
+.brand-logo:hover { opacity: 1; filter: none; }
+
+.site-footer {
+  background: #0b1822;
+  color: #cfd8df;
+}
+.footer-main {
+  display: flex;
+  gap: 2rem;
+  padding: 3rem 0;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.footer-column {
+  flex: 1 1 220px;
+}
+.footer-column h4 {
+  color: #ffffff;
+  margin-bottom: 1rem;
+  letter-spacing: 1px;
+}
+.footer-column ul { list-style: none; padding: 0; }
+.footer-column a { color: #cfd8df; text-decoration: none; display: block; margin: 0.35rem 0; }
+.footer-column a:hover { color: #00aaff; }
+.muted { color: #9aa6b2; margin: 0.25rem 0; }
+.footer-contact address { font-style: normal; line-height: 1.4; }
+.social { display: flex; gap: 0.6rem; margin-top: 0.6rem; }
+.social img { height: 28px; opacity: 0.9; }
+
+.footer-bottom {
+  border-top: 1px solid rgba(255,255,255,0.04);
+  padding: 0.8rem 0;
+  text-align: center;
+  color: #98a6b3;
+}
+
+
+.container { width: 90%; margin: 0 auto; }
+
+
+@media (max-width: 900px) {
+  .footer-main { flex-direction: column; gap: 1.5rem; }
+  .brand-list { gap: 2rem; }
+}
