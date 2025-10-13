@@ -12,17 +12,24 @@
 
     <header class="navbar">
         <div class="logo">AutoHunt</div>
-        <nav>
+
+        <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <nav class="nav-links" aria-hidden="true">
             <ul>
                 <li><a href="#">New Cars</a></li>
                 <li><a href="#">Used Cars</a></li>
                 <li><a href="#">Compare</a></li>
                 <li><a href="#">Sell</a></li>
             </ul>
+            <div class="auth">
+                <a href="#">Sign In</a> | <a href="#">Sign Up</a>
+            </div>
         </nav>
-        <div class="auth">
-            <a href="#">Sign In</a> | <a href="#">Sign Up</a>
-        </div>
     </header>
 
 
@@ -181,6 +188,17 @@
             </div>
         </div>
     </footer>
+    <script>
+        (function(){
+            const btn = document.querySelector('.hamburger');
+            const nav = document.querySelector('.nav-links');
+            btn && btn.addEventListener('click', function(){
+                const isOpen = nav.classList.toggle('open');
+                btn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+                nav.setAttribute('aria-hidden', isOpen ? 'false' : 'true');
+            });
+        })();
+    </script>
 </body>
 
 </html>
